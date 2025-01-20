@@ -1,0 +1,10 @@
+.movielist {
+    font-family: Arial, sans-serif;
+    margin: 0 auto;
+    max-width: 800px;
+    line-height: 1.6;
+    color: #333;
+    padding: 20px;
+    background-color: default;
+    text-align: center;
+}

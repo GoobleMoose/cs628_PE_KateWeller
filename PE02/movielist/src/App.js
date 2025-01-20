@@ -1,25 +1,22 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState} from 'react';
+import { movies } from './MovieData.js';
+import FilterComponent from './MovieList.js';
+import "./MovieList.css";
 
-function App() {
+export default function List() {
+  const listItems = movies.map(movie =>
+    <div key={movie.id}>
+        Title: {movie.movie} - 
+        Genre: {' ' + movie.genre + ' '} - 
+        Release Year: {movie.releaseyear}
+    </div>
+  );
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <h1 className="movielist">Movies</h1>
+      <p>{listItems}</p>
     </div>
   );
 }
 
-export default App;
