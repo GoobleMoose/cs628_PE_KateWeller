@@ -2,6 +2,7 @@ body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
+  background-color: lightgrey;
 }
 
 .container {
@@ -48,15 +49,23 @@ body {
 
 .content {
   padding: 20px;
-  border: 1px solid #ccc;
 }
 
 .blue_button {
   font: monospace;
-  margin: 5px;
+  margin: auto;
   color: white;
   background-color: rgb(0, 115, 255);
   border: none;
   padding: 10px;
   border-radius: 5px;
+}
+
+.section {
+  padding: 20px;
+  margin: 5px;
+  border-radius: 5px;
+  border: 1px solid #aaa;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  background-color: white;
 }
