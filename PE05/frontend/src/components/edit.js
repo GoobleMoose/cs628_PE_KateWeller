@@ -80,13 +80,13 @@ export default function Edit() {
          />
        </div>
        <div className="form-group">
-         <label htmlFor="description">Description: </label>
+         <label htmlFor="instructions">Instructions: </label>
          <input
            type="text"
            className="form-control"
-           id="description"
-           value={form.description}
-           onChange={(e) => updateForm({ description: e.target.value })}
+           id="instructions"
+           value={form.instructions}
+           onChange={(e) => updateForm({ instructions: e.target.value })}
          />
        </div>
        <div className="form-group">
@@ -97,8 +97,8 @@ export default function Edit() {
              name="descriptionOptions"
              id="descriptionEasy"
              value="Easy"
-             checked={form.instructions === "Easy"}
-             onChange={(e) => updateForm({ instructions: e.target.value })}
+             checked={form.description === "Easy"}
+             onChange={(e) => updateForm({ description: e.target.value })}
            />
            <label htmlFor="descriptionEasy" className="form-check-label">Easy</label>
          </div>
@@ -109,8 +109,8 @@ export default function Edit() {
              name="descriptionOptions"
              id="descriptionModerate"
              value="Moderate"
-             checked={form.instructions === "Moderate"}
-             onChange={(e) => updateForm({ instructions: e.target.value })}
+             checked={form.description === "Moderate"}
+             onChange={(e) => updateForm({ description: e.target.value })}
            />
            <label htmlFor="descriptionModerate" className="form-check-label">Moderate</label>
          </div>
@@ -121,8 +121,8 @@ export default function Edit() {
              name="descriptionOptions"
              id="descriptionDifficult"
              value="Difficult"
-             checked={form.instructions === "Difficult"}
-             onChange={(e) => updateForm({ instructions: e.target.value })}
+             checked={form.description === "Difficult"}
+             onChange={(e) => updateForm({ description: e.target.value })}
            />
            <label htmlFor="descriptionDifficult" className="form-check-label">Difficult</label>
        </div>

@@ -5,7 +5,7 @@ const Record = (props) => (
  <tr>
    <td>{props.record.recipe}</td>
    <td>{props.record.description}</td>
-   <td>{props.record.instructions}</td>
+   <td><Link to={props.record.instructions}>{props.record.instructions}</Link></td>
    <td>
      <Link className="btn btn-link" to={`/edit/${props.record._id}`}>Edit</Link> |
      <button className="btn btn-link"
